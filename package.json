@@ -1,0 +1,24 @@
+{
+  "name": "linkedin-automation",
+  "version": "2.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js || node server.js",
+    "worker": "node src/index.js || node index.js",
+    "run-now": "node src/index.js --now || node index.js --now",
+    "dev": "node src/server.js",
+    "cron": "node src/cron.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "LinkedIn automation with monitoring dashboard and self-learning AI",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "node-cron": "^4.2.1",
+    "openai": "^6.29.0"
+  }
+}
