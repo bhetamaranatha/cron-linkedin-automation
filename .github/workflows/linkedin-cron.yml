@@ -10,6 +10,8 @@ on:
 jobs:
   automate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Run Automation
-        run: npm run worker -- --now
+        run: node src/index.js
         env:
           LINKEDIN_MEMBER_ID: ${{ secrets.LINKEDIN_MEMBER_ID }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
