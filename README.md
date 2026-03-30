@@ -1,1 +1,1 @@
-Just me Linkedin automation dawg, nothing interesting 
+Just my Linkedin automation dawg, nothing interesting 
